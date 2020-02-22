@@ -22,6 +22,11 @@ import SciencePost from './Blog/SciencePost'
 import BlogPage from './Blog/BlogPage'
 import CommercePost from './Blog/CommercePost'
 import ArtsPost from './Blog/ArtsPost'
+import TeacherDash from './Components/TeacherDash';
+import upload from './Components/upload';
+import assignments from './Components/assignments';
+import Student from './Components/Student';
+import ShowTasks from './Components/ShowTasks';
 
 
 
@@ -86,6 +91,11 @@ class App extends Component{
                   <Route exact path="/artsPost">
                    <ArtsPost/>
                   </Route>
+                  <Route exact path="/teacher" component={TeacherDash}/>
+                  <Route exact path="/upload" component={upload}/>
+                  <Route exact path="/assignments" component={assignments}/> 
+                  <Route exact path="/student" component={Student}/>
+                   <Route exact path="/pending" component={ShowTasks}/>
               </div>
              
             </Router>
